@@ -1,0 +1,4 @@
+module "eoke" {
+  source = "./eoke"
+}
+
