@@ -1,4 +1,4 @@
-variable "region" {
+variable "aws_region" {
   description = "The AWS region to deploy resources"
   type        = string
   default     = "us-east-1"
@@ -7,4 +7,10 @@ variable "region" {
 variable "bucket_name" {
   description = "The name of the S3 bucket"
   type        = string
+}
+
+variable "environment" {
+  description = "The environment this bucket belongs to (e.g., dev, staging, prod)"
+  type        = string
+  default     = "dev"
 }
